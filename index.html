@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of cybernets</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <body class="index">
+  
+  <!-- XP Boot Screen -->
+<div id="bootScreen">
+  <div class="boot-content">
+    <img src= "images/xploading.png" alt = "Windows Xp loading" position= "top">
+    <div class="loading-bar">
+      <div class="loading-block"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Desktop -->
+<div class="desktop-container">
+  <a href="smileydur.html" class="desktop-icon-wrapper">
+    <img src="images/smileydur.gif" alt="Smiley Dur" class="desktop-icon">
+    <p class="icon-label">Maagikaaa</p>
+  </a>
+  
+    <a href="music.html" class="desktop-icon-wrapper">
+    <img src="images/music.gif" alt="music" class="desktop-icon">
+    <p class="icon-label">Music</p>
+  </a>
+  
+  
+    <a href="guestbook.html" class="desktop-icon-wrapper">
+    <img src="images/book.gif" alt="book" class="desktop-icon">
+    <p class="icon-label">GuestBook</p>
+  </a>
+  
+    <a href="https://github.com/maagikaaa" class="desktop-icon-wrapper">
+    <img src="images/git.gif" alt="git" class="desktop-icon">
+    <p class="icon-label">GitHub</p>
+  </a>
+  
+  </div>
+
+
+  <!--text-->
+    <h1></h1>
+    <p></p>
+
+    <!-- Creating the taskbar -->
+    <div class="taskbar">
+
+      <!-- Start Button with Menu -->
+      <div class="start-container">
+        <div class="start-button" id="startBtn">
+          <img src="images/windowslogo.png" alt="Windows Logo" class="start-logo">
+          Start
+        </div>
+
+        <!-- Hidden menu -->
+        <div class="start-menu" id="startMenu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="settings.html">Settings</a>
+        </div>
+      </div>
+
+      <!-- Task Buttons -->
+      <div class="task-buttons">
+        <a href="about.html" class="task-btn">About</a>
+        <a href="contact.html" class="task-btn">Contact</a>
+      </div>
+
+    <!-- right side control buttons-->
+    <div class="control">
+   <div class="control-buttons">
+    <img src="images/windowsxptour.png" alt="Windows XP Tour Logo" class="xptour-logo">
+    <img src="images/windowsdefender.png" alt="Windows Defender Logo" class="defender-logo">
+    
+        <!-- Volume slider container -->
+    <div class="volume-container">
+      <img src="images/volume.png" alt="Volume Icon" class="volume">
+      <input type="range" class="volume-slider" min="0" max="100" value="50">
+    </div>
+  </div>
+
+      <!-- Clock -->
+      <div class="clock" id="clock">12:00 PM</div>
+    </div>
+
+
+
+
+</div>
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
