@@ -1,0 +1,348 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+/*backgrouund for index/ homepage*/
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #008080; /* your desktop background or image */
+  overflow: hidden;    /* prevent scrollbars */
+  position: relative;  /* for absolute children */
+}
+
+
+.index {
+   background-image: url("windowsxp.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+/*background defaults*/
+body {
+  background-color: white;
+  color: black;
+  font-family: Tahoma, Verdana, "Segoe UI", sans-serif;
+  margin: 0;
+  padding-bottom: 40px; 
+}
+
+/*taskbar*/
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 1000;  /* higher than desktop icons */
+  background: linear-gradient(to top, #245edb, #3a8dde);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+/*------------------start button----------------------------*/
+.start-container {
+  position: relative;
+
+}
+
+.start-button {
+  background: linear-gradient(to bottom, #3cb043, #2e8b3c);
+  color: white;
+  font-weight: bold;
+  padding: 5px 14px;
+
+  border: 1px solid #1c5e27;
+  border-radius: 4px; /* small corner rounding, not bubble */
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background: linear-gradient(to bottom, #4cd65b, #36a73f);
+}
+
+.start-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.start-menu {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 500;
+
+  background: #e6e6e6;
+  border: 2px solid #808080;
+  display: none;
+  flex-direction: column;
+
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.start-menu a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.start-menu a:hover {
+  background: #0a64d8;
+  color: white;
+}
+
+.start-menu a:visited {
+  color: black;
+}
+
+
+
+/*------------------task buttons----------------------------*/
+.task-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.task-btn {
+  background: linear-gradient(to bottom, #4f94ff, #2f6fe4);
+  color: white;
+  padding: 5px 12px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
+/*clock*/
+.clock {
+  color: white;
+  font-size: 14px;
+}
+.task-btn:visited {
+  color: white;
+}
+
+.task-btn:hover {
+  background: linear-gradient(to bottom, #6aaeff, #3f85ff);
+}
+
+/*------------------control buttons----------------------------*/
+.control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+.control-buttons img {
+  width: 40px;   
+  height: 40px;  
+  object-fit: contain; 
+  cursor: default; 
+}
+
+
+.volume {
+  width: 40px;
+  height: 40px;
+  cursor: pointer; 
+}
+
+
+.control-buttons img + img {
+  margin-left: 1px;
+}
+
+
+.volume-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.volume-slider {
+  width: 100px;
+  display: none; 
+  position: absolute;
+  bottom: 25px; 
+  left: -20px;  
+}
+
+
+.volume-container:hover .volume-slider {
+  display: block;
+}
+
+
+/* desktop container */
+.desktop-container {
+  position: absolute;  /* absolute on top of the desktop */
+  top: 20px;           /* leave some space from the top */
+  left: 20px;          /* leave some space from the left */
+  display: flex;
+  flex-direction: column; /* vertical stacking like XP */
+  gap: 20px;
+  z-index: 1;          /* behind taskbar */
+}
+
+/* wrapper for each icon + label */
+.desktop-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: Tahoma, Verdana, "Segoe UI", sans-serif;
+}
+
+/* the GIF icon */
+.desktop-icon {
+  width: 60px;   /* adjust size */
+  height: 60px;
+  cursor: pointer;
+}
+
+/* label below icon */
+.icon-label {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* hover effect */
+.desktop-icon-wrapper:hover .desktop-icon {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/*other pages start ----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*----- About Me --------------------------------------*/
+.xp-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  height: 500px;
+  background: #FFFFFF; 
+  border: 3px solid #808080;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  font-family: Tahoma, Verdana, "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+/* Title bar */
+.xp-popup-titlebar {
+  background: linear-gradient(to bottom, #0a64d8, #3f85ff);
+  color: white;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  cursor: default;
+}
+
+/* Close button */
+.xp-close-btn {
+  background: linear-gradient(to bottom, #e52700, #ff5142);
+  border: 1px solid #808080;
+  padding: 2px 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.xp-close-btn:hover {
+  background: #ff0000;
+  color: white;
+}
+
+/*  content */
+.xp-popup-content {
+  background: white;
+  padding: 10px;
+  color: black;
+  line-height: 1.4;
+}
+
+
+
+/*-----  Boot screen for homepage --------------------------------------*/
+
+#bootScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+}
+
+.boot-content {
+  display: flex;
+  flex-direction: column; /* stack image on top of loading bar */
+  align-items: center;    /* center horizontally */
+  text-align: center;
+}
+
+.boot-content img {
+  width: 600px;   /* adjust size as needed */
+  margin-bottom: 40px; /* space between image and loading bar */
+}
+
+.loading-bar {
+  width: 250px;
+  height: 20px;
+  background: #222;
+  border: 2px solid #555;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px; /* subtle rounded corners */
+}
+
+.loading-block {
+  width: 50px;
+  height: 100%;
+  background: #0a64d8;
+  position: absolute;
+  animation: loadAnim 1.2s linear infinite;
+}
+
+@keyframes loadAnim {
+  0% { left: -50px; }
+  100% { left: 250px; }
+}
