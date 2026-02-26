@@ -19,7 +19,7 @@ html, body {
 
 
 .index {
-   background-image: url("windowsxp.jpg");
+  background-image: url("images/xpbackground.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-attachment: fixed;
