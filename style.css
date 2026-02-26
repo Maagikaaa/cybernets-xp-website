@@ -1,6 +1,4 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+
 
 /*backgrouund for index/ homepage*/
 
@@ -12,9 +10,9 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background: #008080; /* your desktop background or image */
-  overflow: hidden;    /* prevent scrollbars */
-  position: relative;  /* for absolute children */
+  background: #008080; 
+  overflow: hidden;    
+  position: relative;  
 }
 
 
@@ -63,7 +61,7 @@ body {
   padding: 5px 14px;
 
   border: 1px solid #1c5e27;
-  border-radius: 4px; /* small corner rounding, not bubble */
+  border-radius: 4px; 
 
   display: flex;
   align-items: center;
@@ -195,13 +193,13 @@ body {
 
 /* desktop container */
 .desktop-container {
-  position: absolute;  /* absolute on top of the desktop */
-  top: 20px;           /* leave some space from the top */
-  left: 20px;          /* leave some space from the left */
+  position: absolute;  
+  top: 20px;          
+  left: 20px;          
   display: flex;
-  flex-direction: column; /* vertical stacking like XP */
+  flex-direction: column;
   gap: 20px;
-  z-index: 1;          /* behind taskbar */
+  z-index: 1;       
 }
 
 /* wrapper for each icon + label */
@@ -216,7 +214,7 @@ body {
 
 /* the GIF icon */
 .desktop-icon {
-  width: 60px;   /* adjust size */
+  width: 60px; 
   height: 60px;
   cursor: pointer;
 }
@@ -314,14 +312,14 @@ body {
 
 .boot-content {
   display: flex;
-  flex-direction: column; /* stack image on top of loading bar */
-  align-items: center;    /* center horizontally */
+  flex-direction: column; 
+  align-items: center;   
   text-align: center;
 }
 
 .boot-content img {
-  width: 600px;   /* adjust size as needed */
-  margin-bottom: 40px; /* space between image and loading bar */
+  width: 600px;  
+  margin-bottom: 40px; 
 }
 
 .loading-bar {
@@ -331,7 +329,7 @@ body {
   border: 2px solid #555;
   overflow: hidden;
   position: relative;
-  border-radius: 2px; /* subtle rounded corners */
+  border-radius: 2px; 
 }
 
 .loading-block {
