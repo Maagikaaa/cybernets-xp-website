@@ -76,6 +76,15 @@ document.addEventListener("DOMContentLoaded", function () {
       popup.style.display = "none";
     });
   }
+  /* X BUTTON FOR NON POP UP PGS-----*/
+  
+const closeBtn2 = document.querySelector(".close-btn");
+
+if (closeBtn2) {
+  closeBtn2.addEventListener("click", function () {
+    window.location.href = "home.html";
+  });
+}
 
   /* REAL TIME CLOCK (ET) -------------------------------------------------- */
 
