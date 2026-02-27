@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of cybernets</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <body class="index">
+  
+    <!-- Desktop -->
+    <div class="desktop-container">
+      <a href="smileydur.html" class="desktop-icon-wrapper">
+        <img src="images/smileydur.gif" alt="Smiley Dur" class="desktop-icon">
+        <p class="icon-label">Maagikaaa</p>
+      </a>
+      
+      <a href="music.html" class="desktop-icon-wrapper">
+        <img src="images/music.gif" alt="music" class="desktop-icon">
+        <p class="icon-label">Music</p>
+      </a>
+      
+      <a href="guestbook.html" class="desktop-icon-wrapper">
+        <img src="images/book.gif" alt="book" class="desktop-icon">
+        <p class="icon-label">GuestBook</p>
+      </a>
+      
+      <a href="https://github.com/maagikaaa" class="desktop-icon-wrapper">
+        <img src="images/git.gif" alt="git" class="desktop-icon">
+        <p class="icon-label">GitHub</p>
+      </a>
+    </div>
+
+    <!-- Creating the taskbar -->
+    <div class="taskbar">
+
+      <!-- Start Button with Menu -->
+      <div class="start-container">
+        <div class="start-button" id="startBtn">
+          <img src="images/windowslogo.png" alt="Windows Logo" class="start-logo">
+          Start
+        </div>
+
+        <!--  Start Menu -->
+        <div class="start-menu-custom" id="startMenu">
+          <div class="start-profile">
+            <img src="images/profile.png" alt="Profile" class="profile-pic">
+            <span class="profile-name">MAAGIKAAA</span>
+          </div>
+          <div class="start-left">
+            <div class="start-item disabled">Internet Explorer</div>
+            <div class="start-item disabled">Notepad</div>
+            <div class="start-item disabled">Paint</div>
+            <div class="start-item disabled">Tour Windows XP</div>
+          </div>
+          <div class="start-right">
+            <div class="start-item disabled">My Documents</div>
+            <div class="start-item disabled">My Recent Documents</div>
+            <div class="start-item disabled">My Pictures</div>
+            <div class="start-item disabled">My Music</div>
+            <div class="start-item disabled">My Computer</div>
+            <div class="start-item disabled">Control Panel</div>
+            <div class="start-item disabled">Default Programs</div>
+            <div class="start-item disabled">Printers</div>
+            <div class="start-item disabled">Help and Support</div>
+            <div class="start-item disabled">Search</div>
+            <div class="start-item disabled">Run…</div>
+          </div>
+          <div class="start-footer">
+            <button onclick="window.location.href='index.html'" class="reboot-btn">Restart</button>
+            <div class="start-logoff disabled">Log Off</div>
+            <div class="start-shutdown disabled">Turn Off Computer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Task Buttons -->
+      <div class="task-buttons">
+        <a href="about.html" class="task-btn">About</a>
+        <a href="contact.html" class="task-btn">Contact</a>
+      </div>
+
+      <!-- Right side control buttons-->
+      <div class="control">
+        <div class="control-buttons">
+          <img src="images/windowsxptour.png" alt="Windows XP Tour Logo" class="xptour-logo">
+          <img src="images/windowsdefender.png" alt="Windows Defender Logo" class="defender-logo">
+          
+          <div class="volume-container">
+            <img src="images/volume.png" alt="Volume Icon" class="volume">
+            <input type="range" class="volume-slider" min="0" max="100" value="50">
+          </div>
+        </div>
+
+        <!-- Clock -->
+        <div class="clock" id="clock">12:00 PM</div>
+      </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
