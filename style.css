@@ -1,6 +1,6 @@
-
-
 /*backgrouund for index/ homepage*/
+
+
 
 
 html, body {
@@ -8,23 +8,23 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  font-family: Tahoma, Verdana, "Segoe UI", sans-serif;
-}
-
-/* homepage / index background */
-body.index {
-  background-image: url("images/windowsxp.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #008080; /* fallback color */
-  color: black;
+  background: #008080; 
+  overflow: hidden;    
+  position: relative;  
 }
 
 
+.index {
+   background-image: url("images/windowsxp.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+/*background defaults*/
 body {
+  background-color: white;
   color: black;
   font-family: Tahoma, Verdana, "Segoe UI", sans-serif;
   margin: 0;
@@ -192,12 +192,12 @@ body {
 /* desktop container */
 .desktop-container {
   position: absolute;  
-  top: 20px;          
+  top: 20px;           
   left: 20px;          
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   gap: 20px;
-  z-index: 1;       
+  z-index: 1;          
 }
 
 /* wrapper for each icon + label */
@@ -212,7 +212,7 @@ body {
 
 /* the GIF icon */
 .desktop-icon {
-  width: 60px; 
+  width: 60px;   /* adjust size */
   height: 60px;
   cursor: pointer;
 }
@@ -240,7 +240,7 @@ body {
 
 
 
-/*----- About Me --------------------------------------*/
+/*----- popups --------------------------------------*/
 .xp-popup {
   position: fixed;
   top: 50%;
@@ -311,12 +311,12 @@ body {
 .boot-content {
   display: flex;
   flex-direction: column; 
-  align-items: center;   
+  align-items: center;    
   text-align: center;
 }
 
 .boot-content img {
-  width: 600px;  
+  width: 600px;   
   margin-bottom: 40px; 
 }
 
@@ -336,9 +336,254 @@ body {
   background: #0a64d8;
   position: absolute;
   animation: loadAnim 1.2s linear infinite;
+  
+  
+
 }
+
+
+
+
 
 @keyframes loadAnim {
   0% { left: -50px; }
   100% { left: 250px; }
+}
+
+
+
+
+/* journal page ---------------------------------------------- */
+/* Background only on journal page */
+.journal {
+  background-image: url("images/journalbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Glass container */
+.glass-container {
+  width: 60%;
+  max-width: 700px;
+  height: 70vh;
+
+  background: rgba(0, 140, 255, 0.25); /* blue transparent */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  padding: 30px;
+  color: white;
+
+  overflow-y: auto; /* scroll inside container */
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+.ascii-header {
+  width: 100%;
+  text-align: center;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.ascii-header pre {
+  font-family: monospace;
+  font-size: 0.6vw;   
+  line-height: 1;
+  color: white;
+}
+
+
+
+
+
+.glass-container {
+  width: 150%;              
+  max-width: 1000px;       
+
+  height: 75vh;
+
+  background: rgba(0, 140, 255, 0.15);  
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  padding: 40px;
+  color: white;
+
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Close button */
+
+.close-btn {
+  position: fixed;           
+  top: 10px;
+  right: 10px;
+
+  background: linear-gradient(to bottom, #e52700, #ff5142);
+  border: 1px solid #808080;
+  padding: 2px 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  color: white;
+  border-radius: 2px;
+
+  z-index: 1000;            
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #ff0000;
+  color: white;
+}
+
+
+/*MUSIC PAGEE -------------------------------------------*/
+.music{
+  background-image: url("images/musicbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Glass container */
+.glass-container-music {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  
+  align-items: center;          
+  padding: 30px;
+  color: white;
+  width: 80%;
+  max-width: 800px;
+  height: 70vh;
+  background: rgba(246, 127, 160, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+}
+
+
+.music-wrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  height: 100vh;           
+}
+
+.page-title-gif {
+  display: block;        
+  margin: 0 auto 20px;   
+  max-width: 80%;        
+  height: auto;          
+}
+
+/*start menu*/
+
+.start-menu-custom {
+  position: absolute;
+  bottom: 40px; 
+  left: 0;
+  width: 300px;
+  background: linear-gradient(to bottom, #3a85f5, #0a64d8);
+  color: white;
+  font-family: Tahoma, Verdana, "Segoe UI", sans-serif;
+  border: 1px solid #808080;
+  display: flex;
+  flex-direction: column;
+  z-index: 2000;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
+
+/* Profile */
+.start-profile {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background: linear-gradient(to bottom, #2f70e4, #2a60c0);
+  border-bottom: 1px solid #808080;
+}
+
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+/* Columns */
+.start-left,
+.start-right {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+}
+
+.start-left {
+  border-bottom: 1px solid #808080;
+}
+
+.start-item {
+  padding: 4px 0;
+  cursor: default;
+}
+
+.start-item.disabled {
+  pointer-events: none; 
+  opacity: 0.8;
+}
+
+/* Footer */
+.start-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 6px;
+  border-top: 1px solid #808080;
+}
+
+.reboot-btn {
+  background: linear-gradient(to bottom, #3cb043, #2e8b3c);
+  border: 1px solid #1c5e27;
+  color: white;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.reboot-btn:hover {
+  background: linear-gradient(to bottom, #4cd65b, #36a73f);
+}
+
+.start-logoff,
+.start-shutdown {
+  pointer-events: none;
+  opacity: 0.8;
 }
